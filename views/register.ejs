@@ -1,0 +1,84 @@
+<%- include('./base/header.ejs',{totalItems:totalItems,loggedIn: loggedIn,isAdmin:isAdmin,category:category})%>
+
+
+
+
+<!-- ========================= SECTION CONTENT ========================= -->
+<section class="section-content padding-y">
+
+<!-- ============================ COMPONENT REGISTER   ================================= -->
+	<div class="card mx-auto" style="max-width:520px; margin-top:40px;">
+      <article class="card-body">
+		<header class="mb-4">
+			
+			
+			<h4 class="card-title">Register</h4></header>
+		<form action="" method="post">
+				<div class="form-row">
+					<div class="col form-group">
+						<label for="first_name">First name</label>
+					  	<input type="text" id="first_name" name="first_name" class="form-control" placeholder="">
+					</div> <!-- form-group end.// -->
+					<div class="col form-group">
+						<label for="last_name">Last name</label>
+					  	<input type="text" id="last_name"  name="last_name" class="form-control" placeholder="">
+					</div> <!-- form-group end.// -->
+				</div> <!-- form-row end.// -->
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" id="email" name="email" class="form-control" placeholder="">
+					<small class="form-text text-muted">We'll never share your email with anyone else.</small>
+				</div> <!-- form-group end.// -->
+				<div class="form-group">
+					<label class="custom-control custom-radio custom-control-inline">
+					  <input class="custom-control-input" checked="" type="radio" name="gender" value="male">
+					  <span class="custom-control-label"> Male </span>
+					</label>
+					<label class="custom-control custom-radio custom-control-inline">
+					  <input class="custom-control-input" type="radio" name="gender" value="female">
+					  <span class="custom-control-label"> Female </span>
+					</label>
+
+					<label class="custom-control custom-radio custom-control-inline">
+						<input class="custom-control-input" type="radio" name="gender" value="other">
+						<span class="custom-control-label"> Other </span>
+					  </label>
+				</div> <!-- form-group end.// -->
+
+				<div class="form-group ">
+					<label for="country">Country</label>
+					<input type="text" id="country" name="country" class="form-control">
+				  </div>
+				
+					<div class="form-group ">
+					  <label for="city">City</label>
+					  <input type="text" id="city" name="city" class="form-control">
+					</div>
+					 <!-- form-group end.// -->
+					
+				
+				
+					<div class="form-group ">
+						<label for="password">Create password</label>
+					    <input class="form-control" id="password" name="password" type="password">
+					</div> <!-- form-group end.// --> 
+					
+			
+			    <div class="form-group">
+			        <button type="submit" class="btn btn-primary btn-block"> Register  </button>
+			    </div> <!-- form-group// -->      
+			        
+			</form>
+		</article><!-- card-body.// -->
+    </div> <!-- card .// -->
+    <p class="text-center mt-4">Have an account? <a href="/login">Log In</a></p>
+    <br><br>
+<!-- ============================ COMPONENT REGISTER  END.// ================================= -->
+
+
+</section>
+<!-- ========================= SECTION CONTENT END// ========================= -->
+
+
+<!-- ========================= FOOTER ========================= -->
+<%- include('./base/footer.ejs')%>
