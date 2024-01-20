@@ -15,7 +15,7 @@ app.use(methodOverride('_method'));
 
 
 
-const DATABASE_URL=process.env.DATABASE_URL||"mongodb://127.0.0.1:27017";
+const DATABASE_URL=process.env.DATABASE_URL||"mongodb+srv://karan:karan12712@cluster0.z9qdea3.mongodb.net/";
 connectdb(DATABASE_URL)
 
 const transporter = nodemailer.createTransport({
